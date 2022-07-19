@@ -1,4 +1,4 @@
-# Majesty Diffusion 👑
+# Latent Majesty Diffusion v1.6 + Better Inpaint v2👑 (v1.6m2)
 ### Generate images from text with majesty
 #### Formerly known as Princess Generator
 Majesty Diffusion are implementations of text-to-image diffusion models with a royal touch 👸
@@ -10,10 +10,9 @@ Access our [Majestic Guide](https://multimodal.art/majesty-diffusion) (_under co
 
 Current implementations:
 - [Latent Majesty Diffusion](#latent-majesty-diffusion-v16)
-- [V-Majesty Diffusion](#v-majesty-diffusion-v12)
 
 
-## Latent Majesty Diffusion v1.6
+## Latent Majesty Diffusion v1.6m + Better Inpaint v2 (v1.6m2)
 ##### Formerly known as Latent Princess Generator
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/multimodalart/MajestyDiffusion/blob/main/latent.ipynb)
 
@@ -64,11 +63,18 @@ A [Dango233](https://github.com/Dango233) and [apolinario (@multimodalart)](http
  - Adds ViT-L conditioning downstream to the Latent Diffusion unet process
  - Small tweaks on dynamic thresholding
  - Fixes linear ETA 
-</details>
+ 
+ v1.6 + Better Inpaint
+ - Added Inpaint GUI
+ - Added options to overlay the masked area
+ - Merged the Prompts cell with the Diffuse cell
 
-## V-Majesty Diffusion v1.2
-##### Formerly known as Princess Generator ver. Victoria
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/multimodalart/MajestyDiffusion/blob/main/v.ipynb)
+ v1.6 + Better Inpaint v2
+ - Added the option to schedule and change the mask
+ - Cleaned up the code
+ - Added option to invert masks
+ - Fix starting timestep option
+</details>
 
 A [Dango233](https://github.com/Dango233) and [apolinario (@multimodalart)](https://github.com/multimodalart) Colab notebook implementing [crowsonkb](https://github.com/crowsonkb/v-diffusion-pytorch)'s V-Objective Diffusion, with the following changes: 
   - Added [Dango233](https://github.com/Dango233) parallel multi-model diffusion (e.g.: run `cc12m_1` and `yfcc_2` at the same time - with or without lerping)
@@ -84,16 +90,6 @@ A [Dango233](https://github.com/Dango233) and [apolinario (@multimodalart)](http
   - Added [apolinario (@multimodalart)](https://github.com/multimodalart) "internal upscaling" (upscales the output with `yfcc_2` or `openimages`) 
   - Added [apolinario (@multimodalart)](https://github.com/multimodalart) savable settings and setting library (including `defaults`, `disco-diffusion-defaults` default settings). Share yours with us too with a pull request!
 
-## TODO
-### Please feel free to help us in any of these tasks!
-  - [x] Figure out better defaults and add more settings to the settings library (contribute with a PR!)
-  - [ ] Add all notebooks to a single pipeline where on model can be the output of the other (similar to [Centipede Diffusion](https://github.com/Zalring/Centipede_Diffusion))
-  - [ ] Add all notebooks to the [MindsEye UI](multimodal.art/mindseye)
-  - [ ] Modularise everything
-  - [ ] Create a command line version
-  - [ ] Add an inpainting UI
-  - [x] Improve performance, both in speed and VRAM consumption
-  - [ ] More technical issues will be listed on [https://github.com/multimodalart/majesty-diffusion/issues](issues)
 
 ## Acknowledgments
 Some functions and methods are from various code masters - including but not limited to [advadnoun](https://twitter.com/advadnoun), [crowsonkb](https://github.com/crowsonkb), [nshepperd](https://github.com/nshepperd), [russelldc](https://github.com/russelldc), [Dango233](https://github.com/Dango233) and many others
